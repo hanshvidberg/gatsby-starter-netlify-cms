@@ -1,5 +1,7 @@
 ---
-templateKey: 'banana-page'
-path: /banana
-title: Banana page
+templateKey: banana-page
+name: banana name
+email: banana email
+phone: '30'
 ---
+
