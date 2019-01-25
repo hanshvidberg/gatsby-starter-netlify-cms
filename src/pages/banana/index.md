@@ -1,15 +1,17 @@
 ---
-templateKey: 'banana-page'
-path: /banana
-title: Banana page
-name: test name
+templateKey: banana-page
+name: banana check it
 email: banana email
-phone: 1234
+title: Banana page
+phone: 0293840293480
 baz: bar
----
 
-### this is html
+---
+### Test it here
+
 correct?
 
 - list 1
 - list 2
+
+![alt text](/img/chemex.jpg)
