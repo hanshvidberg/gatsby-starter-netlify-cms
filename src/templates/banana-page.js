@@ -4,10 +4,10 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
+export const BananaPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
-  console.log(content);
+  console.log('banana content', content);
   return (
     <section className="section section--gradient">
       <div className="container">
@@ -26,18 +26,18 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   )
 }
 
-AboutPageTemplate.propTypes = {
+BananaPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 }
 
-const AboutPage = ({ data }) => {
+const BananaPage = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
     <Layout>
-      <AboutPageTemplate
+      <BananaPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
@@ -46,14 +46,14 @@ const AboutPage = ({ data }) => {
   )
 }
 
-AboutPage.propTypes = {
+BananaPage.propTypes = {
   data: PropTypes.object.isRequired,
 }
 
-export default AboutPage
+export default BananaPage
 
-export const aboutPageQuery = graphql`
-  query AboutPage($id: String!) {
+export const bananaPageQuery = graphql`
+  query BananaPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
