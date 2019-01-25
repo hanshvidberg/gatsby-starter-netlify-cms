@@ -1,7 +1,9 @@
 ---
 templateKey: banana-page
-name: banana name
+name: banana check it
 email: banana email
-phone: '30'
+phone: 0293840293480
 ---
+Test it here
 
+![](/img/chemex.jpg)
