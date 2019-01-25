@@ -6,4 +6,4 @@ phone: 0293840293480
 ---
 Test it here
 
-![](/img/chemex.jpg)
+![alt text](/img/chemex.jpg)
